@@ -1,3 +1,7 @@
+git config --global -e : to open the config file in the editor(In present case VS code)
+git difftool : to open difftool in vs code
+git difftool --staged: for staged changes
+
 History:
 
 git log: to view changes.(name data and desc)

@@ -1,0 +1,74 @@
+History:
+
+git log: to view changes.(name data and desc)
+git log --oneline: one line desc
+git log --oneline --reverse : from fist cto recent commit
+
+Viewing Commit:
+
+git show id
+git show HEAD (head pointer)
+git show HEAD~number to go back
+git show HEAD~n:director: to see the  final version, not differences
+git ls-tree HEAD: to see all folders and files
+
+files are reperesented using blob and folderes as trees.
+
+GIT objects:
+
+commits
+Blobs(files)
+Trees(Directories)
+Tags
+
+Unstage the files:
+
+git restore --staged file names/.
+
+Note:Git restore takes the snapshot of the file as per the last commit.
+
+Discarding the local chnages:
+
+git restore 
+
+The version from staging enviorment is taken and copied into the directory.
+
+git clean : to remove all the files even the untracked files.
+ git clean -fd: to force remove all directories
+
+Restoring the files:
+
+git restore --source=HEAD~1 : to restore file from last commit.
+
+Creating Branches: git branch brachname
+
+Branches:
+
+git branch branch name
+git branch <branch name> <from branch>
+git checkout branch name
+git checkout -b branch name : to create a new branch and checkout to the branch
+git checkout -b branch name from branch : to create a new branch from a branch other then main and checkout to the branch
+Cloning remote repo:
+
+git clone http link(copied from git hub)
+
+Git fetch: used to get all the cahnges made in the remote branch
+
+git merge: to combine chnages from remote branch to the local repo
+
+git pull: combination of git fetch and merge.
+git push: is used to push the code to the remote repository
+
+Confilicts:
+
+conflicts are created when two are more people work on the  same file and commit the changes to the repository .
+
+
+Best practice to push the code:
+
+step 1: git pull/fetch
+step 2: git merge
+step 3: git push
+
+
